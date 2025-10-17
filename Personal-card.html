@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Card</title>
+     <link rel="stylesheet" href="Personal-card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+     <div data-testid class="profile-container">
+        <article>
+            <div data-testid="test-profile-card" class="profile-card">
+                <div class="profile-header">
+                    <img data-testid="test-user-avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=300&h=300&fit=crop" 
+                        alt="Profile Avatar" 
+                        class="avatar">
+                    
+                    <div data-testid="test-user-name" class="profile-info">
+                        <h1 class="profile-name">Magaji Jinan Goselle</h1>
+                        <p class="profile-stack">Frontend Developer | Web & Mobile</p>
+                        <div data-testid="test-user-time" class="current-time" id="current-time">Loading...</div>
+                    </div>
+                </div>
+
+                <div data-testid="test-user-bio" class="biography-section">
+                    <p class="biography">
+                        I'm Jinan, I am a front-end software developer, I thrive in creating aesthetically engaging,
+                        intuitive and functional software(s). I’m passionate about understanding the core problems users face 
+                        and leveraging design thinking to develop impactful digital experiences. I enjoy collaborating with 
+                        cross-functional teams to bring ideas to life and continuously learning new technologies to enhance my skill set.
+                        My journey in tech began with a curiosity for how things work, and it has evolved into a career 
+                        dedicated to crafting exceptional user experiences. 
+                    
+                    </p>
+                </div>
+
+                <div class="social-section">
+                    <h2 class="section-title">Connect With Me</h2>
+                    <ul class="social-links">
+                        <li data-testid="test-user-social-github" class="social-link">
+                            <a href="https://github.com/Gkving" target="_blank">
+                                <span>GitHub</span>
+                            </a>
+                        </li>
+                        <li data-testid="test-user-social-linkedin" class="social-link">
+                            <a href="https://www.linkedin.com/in/magaji-jinan-078971364/" target="_blank">
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+                        <li data-testid="test-user-social-twitter" class="social-link">
+                            <a href="https://twitter.com/johndoe" target="_blank">
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+
+
+                <div class="interests-container">
+                <div data-testid="test-user-hobbies"  class="interest-card">
+                    <h3 class="interest-title hobbies-title">Hobbies & Interests</h3>
+                    <ul class="interest-list hobbies-list">
+                        <li class="interest-item">Coding</li>
+                        <li class="interest-item">Video Games</li>
+                        <li class="interest-item">Learning Guitar</li>
+                        <li class="interest-item">Gaming</li>
+                        <li class="interest-item">Podcasts</li>
+                    </ul>
+                </div>
+
+                <!-- Dislikes Card -->
+                <div data-testid="test-user-dislikes" class="interest-card">
+                    <h3 class="interest-title dislikes-title">Dislikes</h3>
+                    <ul class="interest-list dislikes-list">
+                        <li class="interest-item">Slow Internet</li>
+                        <li class="interest-item">Traffic Jams</li>
+                        <li class="interest-item">Monday Mornings</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        </div>
+
+    </div>
+
+    <script>
+        // Update current time in milliseconds
+        function updateTime() {
+            const currentTime = Date.now();
+            const timeElement = document.getElementById('current-time');
+            if (timeElement) {
+                timeElement.textContent = currentTime + ' ms';
+            }
+        }
+
+        // Update time immediately and then every 100ms
+        updateTime();
+        setInterval(updateTime, 100);
+    </script>
+</body>
+</html>
