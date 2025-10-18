@@ -32,7 +32,6 @@
             }
         }
 
-        /* Main Profile Card */
         .profile-card {
             background: white;
             border-radius: 20px;
@@ -41,7 +40,6 @@
             margin-bottom: 20px;
         }
 
-        /* Header Section */
         .profile-header {
             display: flex;
             align-items: center;
@@ -93,7 +91,6 @@
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
         }
 
-        /* Biography Section */
         .biography-section {
             margin-bottom: 30px;
         }
@@ -125,7 +122,6 @@
             text-align: justify;
         }
 
-        /* Social Links Section */
         .social-section {
             margin-bottom: 55px;
         }
@@ -157,7 +153,6 @@
             box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
         }
 
-        /* Hobbies and Dislikes Cards */
         .interests-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -182,12 +177,12 @@
         }
 
         .hobbies-title::before {
-            content: '❤️';
+            content: '';
             font-size: 1.3rem;
         }
 
         .dislikes-title::before {
-            content: '👎';
+            content: '';
             font-size: 1.3rem;
         }
 
