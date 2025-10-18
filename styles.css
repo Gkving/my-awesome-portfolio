@@ -217,13 +217,12 @@
         }
 
         .dislikes-list .interest-item:hover {
-            background: #81cffc;
+            background: linear-gradient(135deg, #8290ce 0%, #80c8f1 100%);
             color: white;
             border-color: #667eea;
             transform: translateY(-2px);
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             .profile-card {
                 padding: 30px 25px;
@@ -298,13 +297,11 @@
             }
         }
 
-        /* Ensure no layout breaks */
         * {
             word-wrap: break-word;
             overflow-wrap: break-word;
         }
 
-        /* Time animation */
         .current-time::after {
             content: '';
             display: inline-block;
