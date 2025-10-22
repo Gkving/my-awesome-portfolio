@@ -153,32 +153,6 @@
             }
         }
 
-/* 
-        .fancy-btn {
-     background: linear-gradient(135deg, #3280c9 0%, #6da1ee 100%);
-  background-size: 200% 200%;
-  color: white;
-  border: none;
-  padding: 15px 40px;
-  border-radius: 50px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
-
-.fancy-btn:hover {
-  background-position: right center;
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
-
-.fancy-btn:active {
-  transform: scale(0.97);
-}
- */
-
 
 .icon-btn {
      background: linear-gradient(135deg, #3280c9 0%, #6da1ee 100%);
