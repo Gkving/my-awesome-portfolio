@@ -1,0 +1,96 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="contact-me.css">
+   
+    </head>
+
+
+    <body>
+            <div class="contact-container">
+                            <button class="icon-btn"><i class="fas fa-home"><a href="index.html"></a></i> </button>
+
+                <div class="contact-header">
+                    <h1 class="contact-title">Contact Me</h1>
+                    <p class="contact-subtitle">I'd love to hear from you! </p>
+                </div>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">
+                            Full Name <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            class="form-input" 
+                            placeholder="Enter your full name"
+                            required
+                        >
+                        <span class="success-icon" id="nameSuccess">✓</span>
+                        <div class="error-message" id="nameError">Please enter your full name</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">
+                            Email Address <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form-input" 
+                            placeholder="your.email@example.com"
+                            required
+                        >
+                        <span class="success-icon" id="emailSuccess">✓</span>
+                        <div class="error-message" id="emailError">Please enter a valid email address</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">
+                            Subject <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            class="form-input" 
+                            placeholder="What is this about?"
+                            required
+                        >
+                        <span class="success-icon" id="subjectSuccess">✓</span>
+                        <div class="error-message" id="subjectError">Please enter a subject</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">
+                            Message <span class="required">*</span>
+                        </label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            class="form-textarea" 
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+                        <span class="success-icon" id="messageSuccess" style="top: 45px;">✓</span>
+                        <div class="error-message" id="messageError">Please enter your message</div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        Submit
+                    </button>
+                </form>
+            </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="contact-me.js"></script>
+    </body>
+
+</html>
