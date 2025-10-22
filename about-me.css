@@ -120,7 +120,6 @@
             border-left: 3px solid #6da1ee;
         }
         
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .about-container {
                 padding: 25px;
@@ -154,25 +153,25 @@
         }
 
 
-.icon-btn {
-     background: linear-gradient(135deg, #3280c9 0%, #6da1ee 100%);
-  background-size: 200% 200%;
-  color: white;
-  border: none;
-  padding: 18px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
+        .icon-btn {
+        background: linear-gradient(135deg, #3280c9 0%, #6da1ee 100%);
+        background-size: 200% 200%;
+        color: white;
+        border: none;
+        padding: 18px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        box-shadow: 0 6px 20px rgba(180, 191, 243, 0.4);
+        }
 
-.icon-btn:hover {
-  background-position: right center;
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
+        .icon-btn:hover {
+        background-position: right center;
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
 
-.icon-btn:active {
-  transform: scale(0.95);
-}
+        .icon-btn:active {
+        transform: scale(0.95);
+        }
