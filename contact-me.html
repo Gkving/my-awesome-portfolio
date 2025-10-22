@@ -12,7 +12,7 @@
 
 
     <body>
-            <div class="contact-container">
+            <div data-testid class="contact-container">
                             <button class="icon-btn"><a href="index.html"><i class="fas fa-home"></i></a> </button>
 
                 <div class="contact-header">
@@ -21,7 +21,7 @@
                 </div>
 
                 <form id="contactForm" novalidate>
-                    <div class="form-group">
+                    <div test-contact-name class="form-group">
                         <label for="fullName" class="form-label">
                             Full Name <span class="required">*</span>
                         </label>
@@ -33,11 +33,11 @@
                             placeholder="Enter your full name"
                             required
                         >
-                        <span class="success-icon" id="nameSuccess">✓</span>
-                        <div class="error-message" id="nameError">Please enter your full name</div>
+                        <span test-contact-success class="success-icon" id="nameSuccess">✓</span>
+                        <div test-contact-error-fullName class="error-message" id="nameError">Please enter your full name</div>
                     </div>
 
-                    <div class="form-group">
+                    <div test-contact-email class="form-group">
                         <label for="email" class="form-label">
                             Email Address <span class="required">*</span>
                         </label>
@@ -49,11 +49,11 @@
                             placeholder="your.email@example.com"
                             required
                         >
-                        <span class="success-icon" id="emailSuccess">✓</span>
-                        <div class="error-message" id="emailError">Please enter a valid email address</div>
+                        <span test-contact-success class="success-icon" id="emailSuccess">✓</span>
+                        <div test-contact-error-email class="error-message" id="emailError">Please enter a valid email address</div>
                     </div>
 
-                    <div class="form-group">
+                    <div test-contact-subject class="form-group">
                         <label for="subject" class="form-label">
                             Subject <span class="required">*</span>
                         </label>
@@ -65,11 +65,11 @@
                             placeholder="What is this about?"
                             required
                         >
-                        <span class="success-icon" id="subjectSuccess">✓</span>
-                        <div class="error-message" id="subjectError">Please enter a subject</div>
+                        <span test-contact-success class="success-icon" id="subjectSuccess">✓</span>
+                        <div test-contact-error-subject class="error-message" id="subjectError">Please enter a subject</div>
                     </div>
 
-                    <div class="form-group">
+                    <div test-contact-message class="form-group">
                         <label for="message" class="form-label">
                             Message <span class="required">*</span>
                         </label>
@@ -80,11 +80,11 @@
                             placeholder="Write your message here..."
                             required
                         ></textarea>
-                        <span class="success-icon" id="messageSuccess" style="top: 45px;">✓</span>
-                        <div class="error-message" id="messageError">Please enter your message</div>
+                        <span test-contact-success class="success-icon" id="messageSuccess" style="top: 45px;">✓</span>
+                        <div test-contact-error-message class="error-message" id="messageError">Please enter your message</div>
                     </div>
 
-                    <button type="submit" class="submit-btn" id="submitBtn">
+                    <button  test-contact-submit type="submit" class="submit-btn" id="submitBtn">
                         Submit
                     </button>
                 </form>
